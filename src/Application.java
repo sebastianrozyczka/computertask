@@ -14,6 +14,7 @@ public class Application {
             processor.overclock();
             processor.overclock();
             processor.overclock();
+            processor.overclock();
         } catch (TooHighTemperatureException e) {
             System.out.println(e.getMessage());
         }
