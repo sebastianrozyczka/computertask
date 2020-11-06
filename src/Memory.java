@@ -40,9 +40,9 @@ public class Memory extends Component implements Overclockable {
 
     @Override
     public void overclock() throws TooHighTemperatureException {
+        checkTemperature(temperature + ADD_TEMPERATURE);
         clockSpeed = clockSpeed + ADD_CLOCK_SPEED;
         temperature = temperature + ADD_TEMPERATURE;
-        checkTemperature(temperature);
     }
 
     private void checkTemperature(double temperature) throws TooHighTemperatureException {
